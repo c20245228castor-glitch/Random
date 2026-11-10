@@ -1,0 +1,268 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap');
+
+* {
+  margin: 0;
+    padding: 0;
+      box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: auto;
+        }
+
+        body {
+          background: #171713;
+            color: #e9e1d2;
+              font-family: 'DM Sans', sans-serif;
+                overflow-x: hidden;
+                }
+
+                .loader {
+                  position: fixed;
+                    inset: 0;
+                      background: #171713;
+                        z-index: 100;
+                          display: grid;
+                            place-items: center;
+                            }
+
+                            .loader h1 {
+                              font: italic 25px 'Playfair Display';
+                              }
+
+                              nav {
+                                position: absolute;
+                                  top: 30px;
+                                    left: 5%;
+                                      right: 5%;
+                                        display: flex;
+                                          justify-content: space-between;
+                                            font-size: 9px;
+                                              letter-spacing: 2px;
+                                                opacity: .7;
+                                                  z-index: 5;
+                                                  }
+
+                                                  .hero {
+                                                    height: 100svh;
+                                                      min-height: 650px;
+                                                        display: flex;
+                                                          align-items: center;
+                                                            padding: 8%;
+                                                              position: relative;
+                                                                background:
+                                                                    linear-gradient(90deg, #171713 10%, #171713aa 60%, transparent),
+                                                                        radial-gradient(circle at 75% 50%, #876b4b, #302b20 55%, #171713);
+                                                                        }
+
+                                                                        .hero-content {
+                                                                          position: relative;
+                                                                            z-index: 2;
+                                                                            }
+
+                                                                            .eyebrow, .small-title {
+                                                                              font-size: 10px;
+                                                                                letter-spacing: 4px;
+                                                                                  color: #c7a77c;
+                                                                                    margin-bottom: 30px;
+                                                                                    }
+
+                                                                                    .hero h1, .ending h1 {
+                                                                                      font: 400 clamp(65px, 11vw, 145px) 'Playfair Display';
+                                                                                        line-height: .95;
+                                                                                        }
+
+                                                                                        i {
+                                                                                          color: #c7a77c;
+                                                                                            font-weight: 400;
+                                                                                            }
+
+                                                                                            .hero-sub {
+                                                                                              max-width: 350px;
+                                                                                                margin-top: 30px;
+                                                                                                  line-height: 1.8;
+                                                                                                    color: #c4b9a8;
+                                                                                                    }
+
+                                                                                                    .discover {
+                                                                                                      display: inline-block;
+                                                                                                        color: #e9e1d2;
+                                                                                                          text-decoration: none;
+                                                                                                            font-size: 10px;
+                                                                                                              letter-spacing: 3px;
+                                                                                                                margin-top: 60px;
+                                                                                                                  border-bottom: 1px solid #c7a77c;
+                                                                                                                    padding-bottom: 10px;
+                                                                                                                    }
+
+                                                                                                                    .hero-date {
+                                                                                                                      position: absolute;
+                                                                                                                        bottom: 35px;
+                                                                                                                          right: 5%;
+                                                                                                                            font-size: 9px;
+                                                                                                                              letter-spacing: 3px;
+                                                                                                                                color: #c7a77c;
+                                                                                                                                }
+
+                                                                                                                                .intro, .truth, .wish {
+                                                                                                                                  min-height: 100svh;
+                                                                                                                                    padding: 15% 12%;
+                                                                                                                                      display: flex;
+                                                                                                                                        flex-direction: column;
+                                                                                                                                          justify-content: center;
+                                                                                                                                          }
+
+                                                                                                                                          h2 {
+                                                                                                                                            font: 400 clamp(45px, 8vw, 95px) 'Playfair Display';
+                                                                                                                                              line-height: 1.1;
+                                                                                                                                              }
+
+                                                                                                                                              .intro > p:last-child,
+                                                                                                                                              .memory-text > p:not(.small-title),
+                                                                                                                                              .truth > p:not(.small-title),
+                                                                                                                                              .wish > p:not(.small-title) {
+                                                                                                                                                max-width: 490px;
+                                                                                                                                                  line-height: 2;
+                                                                                                                                                    color: #aaa397;
+                                                                                                                                                      margin-top: 30px;
+                                                                                                                                                        font-size: 14px;
+                                                                                                                                                        }
+
+                                                                                                                                                        /* MEMORIES */
+
+                                                                                                                                                        .memory {
+                                                                                                                                                          min-height: 100svh;
+                                                                                                                                                            display: grid;
+                                                                                                                                                              grid-template-columns: 1fr 1fr;
+                                                                                                                                                                align-items: center;
+                                                                                                                                                                  gap: 8%;
+                                                                                                                                                                    padding: 10%;
+                                                                                                                                                                      background: #201f19;
+                                                                                                                                                                      }
+
+                                                                                                                                                                      .memory-image {
+                                                                                                                                                                        height: 500px;
+                                                                                                                                                                          overflow: hidden;
+                                                                                                                                                                            background:
+                                                                                                                                                                                linear-gradient(#17171355, #17171388),
+                                                                                                                                                                                    radial-gradient(circle, #8e7353, #423b2c);
+                                                                                                                                                                                    }
+
+                                                                                                                                                                                    .music-visual {
+                                                                                                                                                                                      height: 100%;
+                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                          flex-direction: column;
+                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                              justify-content: center;
+                                                                                                                                                                                                border: 1px solid #a58a63;
+                                                                                                                                                                                                  margin: 15px;
+                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                  .music-symbol {
+                                                                                                                                                                                                    font: 150px 'Playfair Display';
+                                                                                                                                                                                                      color: #d6b78f;
+                                                                                                                                                                                                        opacity: .9;
+                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                        .music-caption {
+                                                                                                                                                                                                          font-size: 10px;
+                                                                                                                                                                                                            letter-spacing: 5px;
+                                                                                                                                                                                                              color: #e4d3b6;
+                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                              .music-note {
+                                                                                                                                                                                                                font: italic 20px 'Playfair Display';
+                                                                                                                                                                                                                  color: #c7a77c !important;
+                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                  .truth {
+                                                                                                                                                                                                                    background: #242019;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    .whisper {
+                                                                                                                                                                                                                      font: italic 25px 'Playfair Display';
+                                                                                                                                                                                                                        color: #c7a77c !important;
+                                                                                                                                                                                                                          max-width: 450px;
+                                                                                                                                                                                                                            margin-top: 70px !important;
+                                                                                                                                                                                                                              line-height: 1.6 !important;
+                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                              .wish {
+                                                                                                                                                                                                                                background: #171713;
+                                                                                                                                                                                                                                  text-align: center;
+                                                                                                                                                                                                                                    align-items: center;
+                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                    .wish > p:not(.small-title) {
+                                                                                                                                                                                                                                      max-width: 520px;
+                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                      .ending {
+                                                                                                                                                                                                                                        min-height: 100svh;
+                                                                                                                                                                                                                                          display: grid;
+                                                                                                                                                                                                                                            place-items: center;
+                                                                                                                                                                                                                                              text-align: center;
+                                                                                                                                                                                                                                                padding: 10%;
+                                                                                                                                                                                                                                                  background: radial-gradient(circle at center, #665039, #29251c 60%, #171713);
+                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                  .ending-content {
+                                                                                                                                                                                                                                                    max-width: 850px;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    .ending h1 {
+                                                                                                                                                                                                                                                      font-size: clamp(55px, 10vw, 120px);
+                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                      .ending-content > p:not(.small-title) {
+                                                                                                                                                                                                                                                        max-width: 530px;
+                                                                                                                                                                                                                                                          margin: 35px auto;
+                                                                                                                                                                                                                                                            color: #d0c4b2;
+                                                                                                                                                                                                                                                              line-height: 2;
+                                                                                                                                                                                                                                                              }
+
+                                                                                                                                                                                                                                                              .signature {
+                                                                                                                                                                                                                                                                font: italic 23px 'Playfair Display';
+                                                                                                                                                                                                                                                                  color: #c7a77c;
+                                                                                                                                                                                                                                                                    margin-top: 60px;
+                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                    .end-date {
+                                                                                                                                                                                                                                                                      display: block;
+                                                                                                                                                                                                                                                                        margin-top: 65px;
+                                                                                                                                                                                                                                                                          letter-spacing: 4px;
+                                                                                                                                                                                                                                                                            font-size: 9px;
+                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                            footer {
+                                                                                                                                                                                                                                                                              padding: 30px;
+                                                                                                                                                                                                                                                                                text-align: center;
+                                                                                                                                                                                                                                                                                  font-size: 9px;
+                                                                                                                                                                                                                                                                                    letter-spacing: 3px;
+                                                                                                                                                                                                                                                                                      color: #8c806d;
+                                                                                                                                                                                                                                                                                      }
+
+                                                                                                                                                                                                                                                                                      @media (max-width: 700px) {
+                                                                                                                                                                                                                                                                                        .memory {
+                                                                                                                                                                                                                                                                                            grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                padding: 18% 8%;
+                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                    .memory-image {
+                                                                                                                                                                                                                                                                                                        height: 350px;
+                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                            .intro, .truth, .wish {
+                                                                                                                                                                                                                                                                                                                padding: 25% 8%;
+                                                                                                                                                                                                                                                                                                                  }
+
+                                                                                                                                                                                                                                                                                                                    .hero {
+                                                                                                                                                                                                                                                                                                                        padding: 8%;
+                                                                                                                                                                                                                                                                                                                          }
+
+                                                                                                                                                                                                                                                                                                                            nav {
+                                                                                                                                                                                                                                                                                                                                font-size: 8px;
+                                                                                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                                                                                  }
+                                                                                                                                                                                                                                                                                                                                  
